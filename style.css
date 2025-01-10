@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+:root {
+  font-size: 62.5%;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-bcg-primary: #181919;
+  --clr-bcg-btn: #24fbee;
+  --clr-bcg-nav: #202020;
+  --clr-border-header: #feedec17;
+}
+
+body {
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  color: var(--clr-white);
+  background-color: var(--clr-bcg-primary);
+  min-height: 100vh;
+  background-image: url("./assets/images/bcg-pattern.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header {
+  height: 7.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-border-header);
+  padding: 0 7rem;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-registered {
+  font-size: 3.2rem;
+  font-weight: 100;
+  transform: translateY(2px);
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navigation-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.navigation-link-button {
+  background: var(--clr-bcg-nav);
+  padding: 0.3rem 1rem;
+  border: 4px solid #424242;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 10;
+  font-weight: 500;
+}
+
+.register-btn {
+  background-color: #292929;
+  border-radius: 2rem;
+  width: 22rem;
+  height: 4.2rem;
+  text-align: center;
+  line-height: 4.2rem;
+}
+
+.main {
+  position: relative;
+  min-height: calc(100vh - 7.3rem);
+}
+
+.bcg-pattern {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.hero {
+  width: 67.6rem;
+  margin: 10rem auto 10.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-reviews {
+  color: #bcbcbc;
+}
+
+.hero-heading-primary {
+  font-size: 7.1rem;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.hero-heading-secondary {
+  font-size: 7.1rem;
+  color: #d3d1d1;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.hero-paragraph {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.hero-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.hero-link-blue {
+  width: 27.2rem;
+  height: 5.2rem;
+  border-radius: 50rem;
+  background-color: #24fbee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #090909;
+}
+
+.hero-link {
+  font-weight: 500;
+  line-height: 2.4;
+  text-decoration: underline;
+  color: #e7e7e7;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 118rem;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 10;
+  gap: 3rem;
+}
+
+.content-left {
+  min-width: 25.6rem;
+  height: 41.9rem;
+  border-radius: 2rem;
+  background-color: #141515;
+  border: 1px solid #373737;
+  padding: 2.3rem 1.7rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #f0f0f0;
+}
+
+.content-paragraph {
+  line-height: 2.4rem;
+  color: #787878;
+}
+
+.list {
+  gap: 1rem;
+  margin-top: 1rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 27.6rem;
+}
+
+.list-item {
+  border-radius: 0.8rem;
+  border: 1px solid #373737;
+  position: relative;
+  height: 6.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.color-strip {
+  height: 4.7rem;
+  width: 0.2rem;
+  background-color: #ff5029;
+  position: absolute;
+  left: 0.8rem;
+  top: 0.9rem;
+}
+
+.list-paragraph {
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  color: #f0f0f0;
+}
+
+.list-price {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #787878;
+}
+
+.content-right {
+  display: flex;
+  gap: 3rem;
+}
+
+.invite-links {
+  background-color: #101111;
+  border-radius: 2.3rem;
+  border: 1px solid #373737;
+  width: 39.2rem;
+  height: 27.8rem;
+  padding: 2.3rem 1.7rem;
+}
+
+.invite-links-container {
+  display: flex;
+  gap: 0.4rem;
+  margin: 1.6rem 0;
+}
+
+.invite-link-card {
+  width: 7.2rem;
+  height: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.invite-link-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.invite-link-name {
+  line-height: 2.4rem;
+  color: #787878;
+}
+
+.invite-btn {
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 50rem;
+  background-color: #1f1f1f;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.invite-card {
+  border-radius: 2.3rem;
+  width: 39.2rem;
+  height: 27.8rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  padding: 18.7rem 1.7rem 0;
+}
+
+.invite-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.content-bottom {
+  display: flex;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.statistics {
+  width: 25.4rem;
+  height: 11.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #101111;
+  border: 1px solid #373737;
+  border-radius: 2.3rem;
+  padding: 0 1.55rem;
+}
+
+.statistics-heading {
+  font-size: 4rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+}
+
+.statistics-paragraph {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #787878;
+}
+
+.badges {
+  width: 53rem;
+  height: 13.9rem;
+  border-radius: 2.3rem;
+  background-color: #101111;
+  border: 1px solid #373737;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.badges-left {
+  width: 30rem;
+}
+
+.badges-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.badges-container {
+  position: relative;
+}
+
+.badges-img {
+  position: absolute;
+}
